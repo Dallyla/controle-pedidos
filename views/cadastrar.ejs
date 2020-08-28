@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+
+<div class="cadastrar-div">
+    <form action="/cadastrar" method="post">
+        <h1>Cadastrar pedido</h1>
+        <div class="form-group">
+            <label>Nº do pedido</label>
+            <input type=text class="form-control" name="numeroPedido">            
+        </div>
+        <div class="form-group">
+            <label>Nome do cliente</label>
+            <input type="text" class="form-control" name="nomeCliente">
+        </div>
+        <div class="form-group">
+            <label>CPF cliente</label>
+            <input type="text" class="form-control" name="cpfCliente">
+        </div>
+        <div class="form-group">
+            <label >Produtos</label>
+            <textarea class="form-control" rows="3" name="produtos"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Valor total das mercadorias</label>
+            <input type="text" class="form-control" name="valorMercadorias">
+        </div>
+        <div class="form-group">
+            <label>Valor do frete</label>
+            <input type="text" class="form-control" name="valorFrete">
+        </div>
+        <div class="form-group">
+            <label>Valor do total</label>
+            <input type="text" class="form-control" name="valorTotal">
+        </div>
+        
+        <button type="submit" class="btn btn2" name="saveButton">Salvar</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>

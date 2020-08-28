@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+<div class="buscar-div">
+    <form action="/buscar" method="post">
+        <h1>Buscar pedido</h1>
+
+        <div class="form-group">
+            <label>Nº do pedido</label>
+            <input type=text class="form-control" name="buscarNumPedido">            
+        </div>
+
+        <p>Ou</p>
+
+        <div class="form-group">
+            <label>Nome do cliente</label>
+            <input type=text class="form-control" name="buscarNomeCliente">            
+        </div>
+
+        <p>Ou</p>
+
+        <div class="form-group">
+            <label>CPF do cliente</label>
+            <input type=text class="form-control" name="buscarCpfCliente">            
+        </div>
+
+        
+        <button type="submit" class="btn btn2" name="searchButton">Buscar</button>   
+        
+        
+    </form>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+
+<h1 class="resultado-div">Resultado da busca</h1>
+
+
+
+<%pedidos.forEach(function(pedido){%>
+    <form action="/deletar" method="post"></form>
+    <div class="resultado-div">    
+        <div class="card" style="width: 20rem;">
+            <div class="card-body">
+                <h5 class="card-title">Pedido</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.numPedido%></h6>
+                <h5 class="card-title">Nome do cliente</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.nomeCliente%></h6>
+                <h5 class="card-title">CPF do cliente</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.cpf%></h6>
+                <h5 class="card-title">Produtos</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.produtos%></h6>
+                <h5 class="card-title">Valor total das mercadorias</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.valorMercadorias%></p>
+                <h5 class="card-title">Valor total do frete</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.valorFrete%></p>
+                <h5 class="card-title">Valor total</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=pedido.valorTotal%></p>
+                <form action="/deletar" method="post">
+                    <button class="btn btn-danger" type="submit" name="delete" value="<%=pedido.numPedido%>">Deletar</button>
+                </form>        
+            </div>
+        </div>
+    </div>
+
+<%});%>
+
+
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,96 @@
+body {
+    background-color:#84a9ac;
+    color: #ffffff;
+    font-family: 'Hind Madurai', sans-serif;
+    padding: 0;
+    margin: 0;    
+}
+
+html{
+    position: relative;
+}
+
+h1{
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.main-tile{
+    font-family: 'Hind Madurai', sans-serif;
+    line-height: 2;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 50px auto;
+}
+
+.fas{
+    margin: 50px auto;
+} 
+.centered{
+    padding-top:100px;
+    text-align: center;
+    background-color: #84a9ac;
+
+}
+
+.btn1{
+    background-color:#3b6978;
+    color: #ffffff;
+}
+
+.btn2{
+    background-color:#f3c623;
+    color: #000000;
+}
+
+.btn2:hover{
+    
+    color: #ffffff;
+}
+
+.cadastrar-div{
+    padding: 0 4em;
+    margin: 50px 0;
+}
+
+
+.buscar-div{
+    padding: 0 4em;
+    margin: 50px 0;
+}
+
+.resultado-div{
+    padding: 0 4em;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 5px 5px 5px grey;
+}
+.card-title{
+    color: #709fb0;
+}
+.footer{
+    background-color: aliceblue;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 1.5rem;
+    color:#000000;
+    font-size: 12px;
+    
+    
+}
+
+.link-footer{
+    color:#000000;
+    text-decoration: none;
+}
+
+.link-footer:hover{
+    color:#f3c623;
+    text-decoration: none;
+}
