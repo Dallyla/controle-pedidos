@@ -62,7 +62,7 @@ app.post("/cadastrar", function(req,res){
 
 
 
-app.post("/buscar", function(req, res){
+app.post("/buscar", function(req, res){ // habilitar a busca de todos os pedidos
     Pedido.find({$or:[{numPedido: req.body.buscarNumPedido}, {nomeCliente: req.body.buscarNomeCliente},{cpf: req.body.buscarCpfCliente}]}, function(err, encontrados){
         if(!err){
             res.render("resultado", {pedidos: encontrados});
